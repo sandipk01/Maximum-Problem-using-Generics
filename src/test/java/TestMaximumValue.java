@@ -18,4 +18,11 @@ public class TestMaximumValue {
         Float maximumFloat=maximumValue.getMaxFloat(4.5f,7.5f,10.9f);
         Assert.assertEquals((Float)10.9f,maximumFloat);
     }
+
+    @Test
+    public void findingMaxValue_GivenThreeString_ShouldReturnMaxValue() {
+        maximumValue = new MaximumValue();
+        String maximumFloat=maximumValue.getMaxString("Honda","Ferrari","Bmw");
+        Assert.assertEquals("Honda",maximumFloat);
+    }
 }
