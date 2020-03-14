@@ -12,6 +12,7 @@ public class TestMaximumValue {
         Assert.assertEquals((Integer) 7, maximumInteger);
     }
 
+    @Test
     public void findingMaxValue_GivenThreeFloat_ShouldReturnMaxValue() {
         maximumValue = new MaximumValue();
         Float maximumFloat=maximumValue.getMaxFloat(4.5f,7.5f,10.9f);
