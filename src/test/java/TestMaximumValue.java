@@ -74,4 +74,11 @@ public class TestMaximumValue {
         Integer maximumInteger=(Integer) maximumValue.testMaximum();
         Assert.assertEquals((Integer)7,maximumInteger);
     }
+
+    @Test
+    public void findingMaxFloatValue_GivenFromConstructor_ShouldReturnMaxValue() {
+        maximumValue=new MaximumValue(10.5f,4.8f,7.4f);
+        Float maximumInteger=(Float) maximumValue.testMaximum();
+        Assert.assertEquals((Float)10.5f,maximumInteger);
+    }
 }
