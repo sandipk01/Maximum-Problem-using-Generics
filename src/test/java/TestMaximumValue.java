@@ -20,6 +20,13 @@ public class TestMaximumValue {
     }
 
     @Test
+    public void findingMaxIntegerValue_GivenThirdParameter_ShouldReturnMaxValue() {
+        maximumValue = new MaximumValue();
+        Integer maximumInteger = maximumValue.getMaxvalue(4, 2, 7);
+        Assert.assertEquals((Integer) 7, maximumInteger);
+    }
+
+    @Test
     public void findingMaxValue_GivenThreeFloat_ShouldReturnMaxValue() {
         maximumValue = new MaximumValue();
         Float maximumFloat = maximumValue.getMaxvalue(4.5f, 7.5f, 10.9f);
