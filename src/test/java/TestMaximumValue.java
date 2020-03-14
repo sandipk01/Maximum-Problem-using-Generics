@@ -43,7 +43,7 @@ public class TestMaximumValue {
     @Test
     public void findingMaxFloatValue_GivenThirdParameter_ShouldReturnMaxValue() {
         maximumValue = new MaximumValue();
-        Float maximumFloat = (Float) maximumValue.getMaxValue(4.5f,7.5f , 10.9f);
+        Float maximumFloat = (Float) maximumValue.getMaxValue(4.5f, 7.5f, 10.9f);
         Assert.assertEquals((Float) 10.9f, maximumFloat);
     }
 
@@ -70,22 +70,22 @@ public class TestMaximumValue {
 
     @Test
     public void findingMaxIntegerValue_GivenFromConstructor_ShouldReturnMaxValue() {
-        maximumValue=new MaximumValue(7,4,5);
-        Integer maximumInteger=(Integer) maximumValue.testMaximum();
-        Assert.assertEquals((Integer)7,maximumInteger);
+        maximumValue = new MaximumValue(7, 4, 5);
+        Integer maximumInteger = (Integer) maximumValue.testMaximum();
+        Assert.assertEquals((Integer) 7, maximumInteger);
     }
 
     @Test
     public void findingMaxFloatValue_GivenFromConstructor_ShouldReturnMaxValue() {
-        maximumValue=new MaximumValue(10.5f,4.8f,7.4f);
-        Float maximumInteger=(Float) maximumValue.testMaximum();
-        Assert.assertEquals((Float)10.5f,maximumInteger);
+        maximumValue = new MaximumValue(10.5f, 4.8f, 7.4f);
+        Float maximumInteger = (Float) maximumValue.testMaximum();
+        Assert.assertEquals((Float) 10.5f, maximumInteger);
     }
 
     @Test
     public void findingMaxStringValue_GivenFromConstructor_ShouldReturnMaxValue() {
-        maximumValue=new MaximumValue("Honda","Ferrari","Bmw");
-        String maximumInteger= (String) maximumValue.testMaximum();
-        Assert.assertEquals("Honda",maximumInteger);
+        maximumValue = new MaximumValue("Honda", "Ferrari", "Bmw");
+        String maximumInteger = (String) maximumValue.testMaximum();
+        Assert.assertEquals("Honda", maximumInteger);
     }
 }

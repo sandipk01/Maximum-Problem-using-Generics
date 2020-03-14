@@ -27,7 +27,12 @@ public class MaximumValue<T extends Comparable> {
 
     //method to call getMaxValue method
     public <T extends Comparable> T testMaximum() {
+        printMaximum(getMaxValue(firstValue, secondValue, thirdValue));
         return (T) getMaxValue(firstValue, secondValue, thirdValue);
     }
 
+    //method to printing maximum value
+    public void printMaximum(T value) {
+        System.out.println("Maximum value is : " + value);
+    }
 }
