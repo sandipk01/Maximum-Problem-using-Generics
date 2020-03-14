@@ -60,4 +60,11 @@ public class TestMaximumValue {
         String maximumFloat = maximumValue.getMaxvalue("Ferrari", "Honda", "Bmw");
         Assert.assertEquals("Honda", maximumFloat);
     }
+
+    @Test
+    public void findingMaxStringValue_GivenThirdParameter_ShouldReturnMaxValue() {
+        maximumValue = new MaximumValue();
+        String maximumFloat = maximumValue.getMaxvalue("Ferrari", "Bmw", "Honda");
+        Assert.assertEquals("Honda", maximumFloat);
+    }
 }
