@@ -83,6 +83,13 @@ public class TestMaximumValue {
     }
 
     @Test
+    public void findingMaxIntegerValue_GivenFromConstructorAtThirdParameter_ShouldReturnMaxValue() {
+        maximumValue = new MaximumValue(4, 5, 7);
+        Integer maximumInteger = (Integer) maximumValue.testMaximum();
+        Assert.assertEquals((Integer) 7, maximumInteger);
+    }
+
+    @Test
     public void findingMaxFloatValue_GivenFromConstructor_ShouldReturnMaxValue() {
         maximumValue = new MaximumValue(10.5f, 4.8f, 7.4f);
         Float maximumInteger = (Float) maximumValue.testMaximum();
