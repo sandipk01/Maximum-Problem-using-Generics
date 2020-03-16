@@ -123,4 +123,11 @@ public class TestMaximumValue {
         String maximumInteger = (String) maximumValue.testMaximum();
         Assert.assertEquals("Honda", maximumInteger);
     }
+
+    @Test
+    public void findingMaxStringValue_GivenFromConstructorAtThirdParameter_ShouldReturnMaxValue() {
+        maximumValue = new MaximumValue("Ferrari", "Bmw", "Honda");
+        String maximumInteger = (String) maximumValue.testMaximum();
+        Assert.assertEquals("Honda", maximumInteger);
+    }
 }
