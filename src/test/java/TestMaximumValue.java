@@ -69,8 +69,15 @@ public class TestMaximumValue {
     }
 
     @Test
-    public void findingMaxIntegerValue_GivenFromConstructor_ShouldReturnMaxValue() {
+    public void findingMaxIntegerValue_GivenFromConstructorAtFirstParameter_ShouldReturnMaxValue() {
         maximumValue = new MaximumValue(7, 4, 5);
+        Integer maximumInteger = (Integer) maximumValue.testMaximum();
+        Assert.assertEquals((Integer) 7, maximumInteger);
+    }
+
+    @Test
+    public void findingMaxIntegerValue_GivenFromConstructorAtSecondParameter_ShouldReturnMaxValue() {
+        maximumValue = new MaximumValue(4, 7, 5);
         Integer maximumInteger = (Integer) maximumValue.testMaximum();
         Assert.assertEquals((Integer) 7, maximumInteger);
     }
