@@ -111,8 +111,15 @@ public class TestMaximumValue {
     }
 
     @Test
-    public void findingMaxStringValue_GivenFromConstructor_ShouldReturnMaxValue() {
+    public void findingMaxStringValue_GivenFromConstructorAtFirstParameter_ShouldReturnMaxValue() {
         maximumValue = new MaximumValue("Honda", "Ferrari", "Bmw");
+        String maximumInteger = (String) maximumValue.testMaximum();
+        Assert.assertEquals("Honda", maximumInteger);
+    }
+
+    @Test
+    public void findingMaxStringValue_GivenFromConstructorAtSecondParameter_ShouldReturnMaxValue() {
+        maximumValue = new MaximumValue("Ferrari", "Honda", "Bmw");
         String maximumInteger = (String) maximumValue.testMaximum();
         Assert.assertEquals("Honda", maximumInteger);
     }
