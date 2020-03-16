@@ -90,8 +90,15 @@ public class TestMaximumValue {
     }
 
     @Test
-    public void findingMaxFloatValue_GivenFromConstructor_ShouldReturnMaxValue() {
+    public void findingMaxFloatValue_GivenFromConstructorAtFirstParameter_ShouldReturnMaxValue() {
         maximumValue = new MaximumValue(10.5f, 4.8f, 7.4f);
+        Float maximumInteger = (Float) maximumValue.testMaximum();
+        Assert.assertEquals((Float) 10.5f, maximumInteger);
+    }
+
+    @Test
+    public void findingMaxFloatValue_GivenFromConstructorAtSecondParameter_ShouldReturnMaxValue() {
+        maximumValue = new MaximumValue(4.8f, 10.5f, 7.4f);
         Float maximumInteger = (Float) maximumValue.testMaximum();
         Assert.assertEquals((Float) 10.5f, maximumInteger);
     }
